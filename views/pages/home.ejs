@@ -1,0 +1,228 @@
+<%- include ('../partials/header') %>
+<header class="home-cta">
+  <div class="instructions">
+    <h1>Hotel Reservations Midterm</h1>
+    <hr><hr>
+
+    <h2 class="my-5">
+      <strong>Instructions:</strong>
+    </h2>
+    <hr>
+
+    <section class="my-5">
+      <h3>Task:</h3>
+      <p>
+        You're building an application that allows a <strong>registered user</strong> to create a new reservation at our hotel.
+      </p>
+    </section>
+
+    <hr>
+    <section class="my-5">
+      <h3>WHAT YOU ARE PERMITTED:</h3>
+
+      <ul>
+        <li>Your notes</li>
+        <li>The internet</li>
+        <li>To discuss strategies and concepts with your colleagues</li>
+      </ul>
+    </section>
+
+    <section class="my-5">
+      <h3>WHAT YOU ARE <strong style="color: red;">NOT</strong> PERMITTED:</h3>
+
+      <ul>
+        <li>Too copy and paste code from the internet</li>
+        <li>To use your colleagues code</li>
+        <li>Handing in someone elses Github link</li>
+        <li>Handing in someone elses Heroku link</li>
+      </ul>
+    </section>
+
+    <section class="my-5">
+      <h3>
+        <strong style="color: red;">
+          REPERCUSSIONS FOR ACADEMIC MISCONDUCT:
+        </strong>
+      </h3>
+
+      <ul>
+        <li>Immediate zero on your midterm</li>
+        <li>Submission of your academic misconduct to the registrars office</li>
+        <li>A discussion with your project coordinator</li>
+      </ul>
+    </section>
+    <hr>
+
+    <section class="my-5">
+      <h3>Requirements:</h3>
+
+      <p>
+        <small>
+          "User" from here forward will refer to a registered/authenticated user.
+        </small>
+      </p>
+
+      <ul>
+        <li>A guest must be able to register as a new user</li>
+        <li>A user must be able to create a new reservation</li>
+        <li>A user can only view their reservations (no one elses)</li>
+        <li>A user must be able to edit their reservations</li>
+        <li>A user must be able to delete their reservations</li>
+      </ul>
+
+      <p>
+        The following files will need to be completed from scratch (though the files themselves are created for you):
+      </p>
+
+      <ul>
+        <li>/models/reservation.js</li>
+        <li>/controllers/ReservationsController.js</li>
+        <li>/routes/reservations.js</li>
+      </ul>
+
+      <p>
+        The following files will need to be amended:
+      </p>
+
+      <ul>
+        <li>/views/reservations/index.ejs</li>
+        <li>/views/reservations/show.ejs</li>
+        <li>/controllers/SessionsController.js</li>
+      </ul>
+    </section>
+
+    <hr>
+    <h2 class="my-5">
+      <strong>Rubric:</strong>
+    </h2>
+    <hr>
+
+    <section class="my-5">
+      <h3>What you need to submit:</h3>
+
+      <ul>
+        <li>A link to your Github repository that contains the midterm files</li>
+        <li>Heroku link to your working application</li>
+      </ul>
+    </section>
+
+    <section class="my-5">
+      <h3>SUPER IMPORTANT NOTE:</h3>
+
+      <p>
+        A non-working Heroku link is an immediate 20% deduction. Your application must be functional and working.
+      </p>
+
+      <p>
+        A missing Github link is an immediate zero. I will not mark zip files. You must have your code on Github for it to be marked. This is a non-negotiable requirement.
+      </p>
+
+      <p>
+        Handing in a midterm that is comprised of files from the blog project/labs/project etc will result in a zero for each of those files. <strong style="color: red">DO NOT COPY AND PASTE FROM YOUR LABS/PROJECT/BLOG EXAMPLE!!!</strong>
+      </p>
+
+      <p style="color: red">
+        DO <strong>NOT</strong> SUBMIT A COMPRESSED VERSION OF THE MIDTERM TO BLACKBOARD. JUST LINKS!
+      </p>
+    </section>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Expectation</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>/models/reservation.js</td>
+          <td>
+            <ul>
+              <li>contains all required fields</li>
+              <li>data type for each field is correct</li>
+              <li>contains reference to the user model</li>
+            </ul>
+          </td>
+          <td>40</td>
+        </tr>
+
+        <tr>
+          <td>/controllers/ReservationsController.js</td>
+          <td>
+            <ul>
+              <li>contains the seven required actions (index, show, new, edit, create, update, and delete)</li>
+              <li>the index and show actions populate the associated user</li>
+              <li>all seven actions function correctly</li>
+              <li>appropriate error handling is in place</li>
+              <li>flash messages have been implemented</li>
+              <li>renders and redirects are used respectively in the correct actions at the correct moments</li>
+            </ul>
+          </td>
+          <td>100</td>
+        </tr>
+
+        <tr>
+          <td>/routes/reservations.js</td>
+          <td>
+            <ul>
+              <li>all 7 routes must be defined using the appropriate HTTP method (GET, POST)</li>
+              <li>the routes must point to the appropriate controller action</li>
+              <li>all 7 routes must be authenticated using the provided authentication function</li>
+            </ul>
+          </td>
+          <td>30</td>
+        </tr>
+
+        <tr>
+          <td>/views/reservations/index.ejs</td>
+          <td>
+            <ul>
+              <li>fill in the missing information with your reseration info</li>
+            </ul>
+          </td>
+          <td>20</td>
+        </tr>
+
+        <tr>
+          <td>/views/reservations/show.ejs</td>
+          <td>
+            <ul>
+              <li>fill in the missing information with your reseration info</li>
+            </ul>
+          </td>
+          <td>20</td>
+        </tr>
+
+        <tr>
+          <td>/controllers/SessionsController.js</td>
+          <td>
+            <ul>
+              <li>complete the authentication function</li>
+            </ul>
+          </td>
+          <td>30</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="2">Total Points:</td>
+          <td>230</td>
+        </tr>
+
+        <tr>
+          <td style="color: red" colspan="3">-46 points for missing or non-working Heroku link</td>
+        </tr>
+        <tr>
+          <td style="color: red" colspan="3">Immeditate zero (0) for missing Github link (or empty/wrong repo link)</td>
+        </tr>
+        <tr>
+          <td style="color: red" colspan="3">Immeditate zero (0) for submitting any files that are not apart of the midterm</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</header>
+<%- include ('../partials/footer') %>

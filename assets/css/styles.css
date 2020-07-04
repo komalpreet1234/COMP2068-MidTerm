@@ -1,0 +1,58 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.home-cta {
+  background: url('/images/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions th, .instructions td {
+  color: #fff;
+}
+
+.home-cta > .instructions {
+  min-width: 300px;
+  min-height: 300px;
+  width: 70%;
+  background: rgba(0,0,0,0.9);
+  border-radius: 10px;
+  color: #fff;
+  padding: 2em;
+  max-height: 90%;
+  overflow: auto;
+}
+
+hr {
+  background: #fff;
+}
+
+.form-inline {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.form-inline > .delete {
+  border: none;
+  background: none;
+  color: #007bff;
+  margin: 0;
+  padding: 0;
+}
+
+.form-inline > .delete:hover {
+  color: #0056b3;
+}
